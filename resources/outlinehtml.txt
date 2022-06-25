@@ -1,0 +1,32 @@
+<div id="outline">
+    <div>
+        <h1 class="content-title inline-width animate__animated animate__bounceIn" style="padding-bottom: 2.5rem;">
+            <!-- <span class="main weak2 comp-only">Alex</span>
+            <span class="accent weak2 comp-only">.show(</span>
+            <span class="main"><span class="comp-only">"</span>outline <span class="comp-only">"</span></span>
+            <span class="accent weak2 comp-only">);</span> -->
+
+            <span class="main weak comp-only">
+            Alex</span><span class="accent">.outline()</span>
+
+        </h1>
+
+        <span class="weak handwrite comp-only" style="margin-top: 6rem;">
+            &lt;outline&gt;
+        </span>
+
+        <div style="margin-left: 2rem;" class="animate__animated animate__bounceInLeft">
+            <p class="main large">
+                A creative <span class="accent">front-end</span> engineer...
+            </p>
+
+            <p class="main large">
+                ... and a <strike class="weak">full</strike> <span class="accent">3/4 stack</span> developer
+            </p>
+        </div>
+
+        <span class="weak handwrite comp-only" style="margin-top: 5rem;">
+            &lt;/outline&gt;
+        </span>
+    </div>
+</div>
