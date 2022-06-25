@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My projects</title>
+    <script src="js/index.js" defer></script>
+
+    <style>
+        body,
+        html {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            color: var(--clr-text-content, white);
+            font-family: Roboto Mono, monospace;
+        }
+        html {
+            background-color: var(--clr-background-main, black);
+        }
+        #loader {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+            transition: opacity 350ms ease;
+        }
+        #loadingBar {
+            height: 1px;
+            width: 500px;
+            border-top: 1px solid var(--clr-hover, #05fdd8);
+            position: relative;
+        }
+        #progress {
+            --prog: .1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: calc(var(--prog) * 500px);
+            height: 15px;
+            background-color: var(--clr-hover);
+            transform: translateY(-50%);
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="loader">
+        <div id="loadingBar">
+            <div id="progress"></div>  
+        </div>
+        <br>
+        <span style="margin-top: 10px;">Now loading...</span>
+    </div>
+    
+    <div id="content" style="opacity: 0; transition: opacity 550ms ease;">
+        <div id="header">
+            <!-- the top non-moving part -->
+            <div id="logo">
+                Alex
+            </div>
+            <div id="title">
+                <span id="logo-part-1">Hi, I'm<span style="color:transparent;">.</span></span>
+                <span id="logo-part-2">Alex</span>
+            </div>
+        </div>
+
+        <div id="navbar">
+            <!-- the navbar at the side -->
+            <div id="icons">
+                <a href="javascript:iconPress('outline');">
+                    <div class="icon selected" id="outline">
+                        
+                    </div>
+                </a>
+
+                <a href="javascript:iconPress('about')">
+                    <div class="icon" id="about">
+                        
+                    </div>
+                </a>
+
+                <a href="javascript:iconPress('skills')">
+                    <div class="icon" id="skills">
+                        
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div id="main-screen">
+            <!-- biggest part of screen with main content -->
+        </div>
+    </div>    
+
+</body>
+</html>
