@@ -17,11 +17,11 @@
 
         <div style="margin-left: 2rem;" class="animate__animated animate__bounceInLeft">
             <p class="main large">
-                A creative <span class="accent">front-end</span> engineer...
+                I develop <span class="accent">full stack</span> apps..
             </p>
 
             <p class="main large">
-                ... and a <strike class="weak">full</strike> <span class="accent">3/4 stack</span> developer
+                ... and design <span class="accent">smooth</span> UI/UXs
             </p>
         </div>
 
