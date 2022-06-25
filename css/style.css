@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+
+:root {
+    --clr-background-main: #000;
+    --clr-hover: #05fdd8;
+    --clr-accent: rgb(255, 134, 193);
+    /*rgb(255, 134, 193);*/
+    --clr-text-content: white;
+    --clr-text-weak: #666;
+}
+
+#loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    transition: opacity 350ms ease;
+}
+#loadingBar {
+    height: 1px;
+    width: 500px;
+    border-top: 1px solid var(--clr-hover);
+    position: relative;
+}
+#progress {
+    --prog: .1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(var(--prog) * 500px);
+    height: 15px;
+    background-color: var(--clr-hover);
+    transform: translateY(-50%);
+    transform-origin: left;
+    transition: width 100ms linear;
+}
+
+
+#content {
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-background-main);
+
+    display: grid;
+    grid-template-areas: ". header header header header header header ."
+        "navbar navbar . screen screen screen screen ."
+        "navbar navbar . screen screen screen screen .";
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-columns: .1fr .35fr .1fr 1fr 1fr 1fr 1fr .25fr;
+}
+
+#header {
+    font-family: 'Anek Latin', sans-serif;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-size: 2rem;
+    color: var(--clr-hover) !important;
+    text-shadow: 1px 1px 3px var(--clr-hover), -1px 1px 3px var(--clr-hover), 1px -1px 3px var(--clr-hover), -1px -1px 3px var(--clr-hover);
+    cursor: pointer;
+    transition: text-shadow 80ms ease;
+}
+
+
+#header>#title {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    color: var(--clr-text-content);
+    cursor: default;
+}
+
+
+#header #logo-part-1 {
+    color: var(--clr-text-content);
+    transition: color 550ms ease;
+}
+
+#header #logo-part-2 {
+    color: var(--clr-accent);
+    transition: color 550ms ease;
+}
+
+#title:hover #logo-part-2 {
+    color: var(--clr-hover);
+}
+
+
+
+#logo {
+    color: var(--clr-accent);
+}
+
+#navbar {
+    grid-area: navbar;
+}
+
+.icon>svg {
+    transition: fill 200ms linear;
+    fill: var(--clr-text-content);
+}
+.icon.selected>svg {
+    fill: var(--clr-hover) !important;
+}
+.icon:hover > svg {
+    fill: var(--clr-accent);
+}
+
+#icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+
+#main-screen {
+    transition: opacity 250ms ease, transform 250ms ease;
+    grid-area: screen;
+}
+
+
+.handwrite {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.3rem;
+}
+
+
+
+.content-title {
+    font-size: 2.3rem;
+}
+
+.main {
+    color: var(--clr-text-content);
+}
+
+.accent {
+    color: var(--clr-accent);
+}
+
+.hover {
+    color: var(--clr-hover);
+}
+
+.weak {
+    color: var(--clr-text-weak);
+}
+
+.weak2 {
+    opacity: .3;
+}
+
+.large {
+    font-size: 1.2rem;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(13px);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .comp-only {
+        display: none;
+    }
+    body,
+    html {
+        font-family: Nuosu SIL, serif;
+    }
+    p.main {
+        display: inline;
+    }
+}
+
+
+.inline-width {
+    width: max-content;
+}
