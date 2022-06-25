@@ -22,12 +22,14 @@
     place-items: center;
     transition: opacity 350ms ease;
 }
+
 #loadingBar {
     height: 1px;
     width: 500px;
     border-top: 1px solid var(--clr-hover);
     position: relative;
 }
+
 #progress {
     --prog: .1;
     position: absolute;
@@ -114,10 +116,12 @@
     transition: fill 200ms linear;
     fill: var(--clr-text-content);
 }
+
 .icon.selected>svg {
     fill: var(--clr-hover) !important;
 }
-.icon:hover > svg {
+
+.icon:hover>svg {
     fill: var(--clr-accent);
 }
 
@@ -187,10 +191,7 @@
     .comp-only {
         display: none;
     }
-    body,
-    html {
-        font-family: Nuosu SIL, serif;
-    }
+
     p.main {
         display: inline;
     }
