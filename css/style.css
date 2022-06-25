@@ -159,6 +159,7 @@
 
 .main {
     color: var(--clr-text-content);
+    display: block;
 }
 
 .accent {
