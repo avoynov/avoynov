@@ -17,7 +17,7 @@
 
         <div style="margin-left: 2rem;" class="animate__animated animate__bounceInLeft">
             <p class="main large">
-                I develop <span class="accent">full stack</span> apps..
+                I develop <span class="accent">full stack</span> apps...
             </p>
 
             <p class="main large">
